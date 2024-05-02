@@ -1,9 +1,12 @@
 function Item({ item }) {
   return (
-    <div>
-      <li>{item.did}</li>
-      <li>{item.description}</li>
-    </div>
+    <li>
+      <span style={item.packed ? { textDecoration: "line-through" } : {}}>
+        {item.id} {item.description}
+      </span>
+
+      <button>❌</button>
+    </li>
   );
 }
 
