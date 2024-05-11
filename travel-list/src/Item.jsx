@@ -5,7 +5,6 @@ function Item({ item }) {
         {item.id} {item.description} {item.packed}
       </span>
       <button>❌</button>
-      <button>❌</button>
     </li>
   );
 }
