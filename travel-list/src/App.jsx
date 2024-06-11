@@ -8,7 +8,6 @@ function App() {
   const handleAddItem = (item) => {
     setItems((items) => [...items, item]);
   };
-
   return (
     <div>
       <Logo />
