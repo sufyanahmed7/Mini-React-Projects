@@ -1,9 +1,9 @@
 import { useState } from "react";
-import PackingList from "./PackingList";
 
-function Form() {
+function Form({ onAddItems }) {
   const [description, setDescription] = useState("");
   const [quantity, setQuantity] = useState("1");
+
   function handleSubmit(e) {
     e.preventDefault();
     if (!description) return;
@@ -11,6 +11,8 @@ function Form() {
     console.log(newItem);
     setDescription("");
     setQuantity("1");
+
+    onAddItems(newItem);
   }
 
   return (

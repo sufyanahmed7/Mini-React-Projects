@@ -2,12 +2,12 @@ import Item from "./Item";
 const initialItems = [
   { id: 1, description: "Passports", quantity: 2, packed: false },
 ];
-function PackingList() {
+function PackingList({ items }) {
   return (
     <div className="list">
       <ul>
-        {initialItems.map((item) => (
-          <Item item={item.description} key={item.id} />
+        {items.map((item) => (
+          <Item item={item} key={item.id} />
         ))}
       </ul>
     </div>
