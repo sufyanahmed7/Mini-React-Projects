@@ -5,6 +5,8 @@ function Item({ item }) {
         {item.quantity} {item.description} {item.packed}
       </span>
       <button>❌</button>
+      <button>❌</button>
+
     </li>
   );
 }
